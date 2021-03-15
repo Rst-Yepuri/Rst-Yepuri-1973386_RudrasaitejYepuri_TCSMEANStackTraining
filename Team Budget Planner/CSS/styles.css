@@ -1,0 +1,44 @@
+html {
+    height: 100%;
+
+}
+
+body{
+    background-image: url("budget.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+H1{
+    text-align: center;
+}
+
+#index_DIV{
+    margin: 100px 700px;
+    border: solid white;
+    height: 350px;
+}
+
+#d1{
+    float:left;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 125px;
+    font-size: x-large;
+    
+}
+#d2{ 
+    height: 100%; 
+    width: auto;
+    border: black;
+    align-items: center;
+    padding-right: 10px;
+    color: white;
+    margin-top: 125px;
+    font-size: x-large;
+    
+}

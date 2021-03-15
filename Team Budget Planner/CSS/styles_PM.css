@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+
+}
+
+body{
+    background-image: url("budget.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    margin: 300px 800px 300px 800px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=button] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  input[type=reset] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+a{
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: larger;
+    text-decoration: unset;
+}
+
+H3{
+    text-decoration: underline;
+}

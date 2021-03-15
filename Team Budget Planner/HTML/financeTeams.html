@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Teams</title>
+    <script src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\Team Budget Planner\JS\budgetPlanner.js">
+    </script>
+    <link rel="stylesheet" href="C:\Users\rudra\Desktop\TCSMEANStackTrainig\Team Budget Planner\CSS\styles_FT.css">
+
+</head>
+<body>
+    <h2>FinanceTeams</h2>
+    <h4>Annual Budget</h4>
+    <table id="projectBudgets">
+        <thead>
+            <tr>
+                <th>Client Name</th>
+                <th>Project Name</th>
+                <th>Budget</th>
+            </tr>
+        </thead> 
+        <tbody>
+ 
+        </tbody>
+     </table>
+     <p id = "totalBudget">Total Annual Budget : </p>
+     <script>
+        var total = reteriveInSession();
+        document.getElementById('totalBudget').innerHTML = "Total Annual Budget: "  +  total;
+    </script>
+    <a href="index.html">back</a>
+
+
+</body>
+</html>
