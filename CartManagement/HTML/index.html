@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\CSS\clean.css">
+    <script src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\JS\index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg " id="mainNav">
+            <a class="navbar-brand" href="index.html"><img
+                    src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\CSS\Images\icon.png" alt=""
+                    width="30" height="30" class="d-inline-block align-top"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link" href="cart.html">
+                            <i class="fa fa-shopping-cart" style="font-size:30px"></i>
+                            <span class='badge badge-warning' id='lblCartCount'>
+                                <script>
+                                    var total = totalQuantity();
+                                    document.getElementById('lblCartCount').innerHTML = total;
+                                </script>
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image:url('Header.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container " id="content">
+        <div class="row">
+            <div class="col-sm-4" id="product-1">
+                <img src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\CSS\Images\denim1.webp" alt=""
+                    style="height: 200px;">
+                <h4>Levi's</h4>
+                <h5>Blue Denim Jacket</h5>
+                <h6>$45.50</h6>
+                <button type="button" class="btn btn-outline-secondary" onclick="storeToSession('product-1')">Add to
+                    Bag</button>
+            </div>
+            <div class="col-sm-4" id="product-2">
+                <img src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\CSS\Images\denim2.webp" alt=""
+                    style="height: 200px;">
+                <h4>Jack & Jones</h4>
+                <h5>Navy Denim Jacket</h5>
+                <h6>$45.50</h6>
+                <button type="button" class="btn btn-outline-secondary" onclick="storeToSession('product-2')">Add to
+                    Bag</button>
+            </div>
+            <div class="col-sm-4" id="product-3">
+                <img src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\CSS\Images\denim3.webp" alt=""
+                    style="height: 200px;">
+                <h4>Levi's</h4>
+                <h5>Girls Denim Jacket</h5>
+                <h6>$35.50</h6>
+                <button type="button" class="btn btn-outline-secondary" 
+                    onclick="storeToSession('product-3')">Add to Bag</button>
+            </div>
+            <div class="col-sm-4" id="product-4">
+                <img src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\CSS\Images\denim4.webp" alt=""
+                    style="height: 200px;">
+                <h4>UCB</h4>
+                <h5>Girls Denim Jacket</h5>
+                <h6>$35.50</h6>
+                <button type="button" class="btn btn-outline-secondary" 
+                    onclick="storeToSession('product-4')">Add to Bag</button>
+            </div>
+            <div class="col-sm-4" id="product-5">
+                <img src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\CSS\Images\denim5.webp" alt=""
+                    style="height: 200px;">
+                <h4>Levi's</h4>
+                <h5>Indigo Workshirt</h5>
+                <h6>$30.00</h6>
+                <button type="button" class="btn btn-outline-secondary" onclick="storeToSession('product-5')">Add to Bag</button>
+            </div>
+            <div class="col-sm-4" id="product-6">
+                <img src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\CSS\Images\denim6.webp" alt=""
+                    style="height: 200px;">
+                <h4>Tommy Jeans</h4>
+                <h5>Blue Denim Jeans</h5>
+                <h6>$65.00</h6>
+                <button type="button" class="btn btn-outline-secondary" onclick="storeToSession('product-6')">Add to Bag</button>
+            </div>
+            <div class="col-sm-4" id="product-7">
+                <img src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\CSS\Images\denim7.webp" alt=""
+                    style="height: 200px;">
+                <h4>Calvin Klein</h4>
+                <h5>Girls Denim Short</h5>
+                <h6>$25.50</h6>
+                <button type="button" class="btn btn-outline-secondary" onclick="storeToSession('product-7')">Add to Bag</button>
+            </div>
+            <div class="col-sm-4" id="product-8">
+                <img src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\CSS\Images\denim8.webp" alt=""
+                    style="height: 200px;">
+                <h4>Levi's</h4>
+                <h5> Girls Denim Trouser</h5>
+                <h6>$65.50</h6>
+                <button type="button" class="btn btn-outline-secondary" onclick="storeToSession('product-8')">Add to Bag</button>
+            </div>
+            <div class="col-sm-4" id="product-9">
+                <img src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\CSS\Images\denim9.webp" alt=""
+                    style="height: 200px;">
+                <h4>Tommy Hilfiger</h4>
+                <h5>Girls Denim Over-All</h5>
+                <h6>$40.00</h6>
+                <button type="button" class="btn btn-outline-secondary" onclick="storeToSession('product-9')">Add to Bag</button>
+            </div>
+            <div class="col-sm-4" id="product-10">
+                <img src="C:\Users\rudra\Desktop\TCSMEANStackTrainig\CartManagement\CSS\Images\denim10.webp" alt=""
+                    style="height: 200px;">
+                <h4>Gap</h4>
+                <h5>Girls Denim Short</h5>
+                <h6>$25.50</h6>
+                <button type="button" class="btn btn-outline-secondary" onclick="storeToSession('product-10')">Add to Bag</button>
+            </div>
+
+        </div>
+
+    </div>
+    <hr />
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="	fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="	fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="	fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="	fa fa-snapchat fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Denim.com 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

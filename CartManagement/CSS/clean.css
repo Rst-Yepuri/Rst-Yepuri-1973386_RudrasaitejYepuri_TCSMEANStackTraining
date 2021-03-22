@@ -1,0 +1,192 @@
+
+
+body {
+  font-size: 20px;
+  color:initial;
+  font-family: 'Lora', 'Times New Roman', serif;
+}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+h1{
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    font-size:100px;
+
+}
+h4,
+h5,
+h6 {
+  font-family:'Courier New', Courier, monospace;
+}
+
+a {
+  color: black;
+  transition: all 0.2s;
+}
+
+a:focus, a:hover {
+  color: #0085A1;
+}
+
+blockquote {
+  font-style: italic;
+  color: black;
+}
+
+.nav-link{
+    color:black
+}
+
+.caption {
+  font-size: 14px;
+  font-style: italic;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #0085A1;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: #0085A1;
+  text-shadow: none;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+.navbar-brand .d-inline-block{
+
+}
+
+
+header.masthead {
+  margin-bottom: 50px;
+  background: no-repeat center center;
+  background-color:white;
+  background-attachment: scroll;
+  position: relative;
+  background-size:contain;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color:beige;
+  opacity: 0.3;
+}
+
+header.masthead 
+{
+  padding: 200px 0 150px;
+  text-align:left;
+  font-size: 10px;
+  margin-top: 0;
+}
+
+header.carthead {
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    background-color:white;
+    background-attachment: scroll;
+    position: relative;
+    background-size:cover;
+  }
+  
+  header.carthead .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+  }
+  
+  header.carthead .site-heading
+  {
+    padding: 200px 0 150px;
+    text-align:center;
+    font-size: 50px;
+    margin-top: 0;
+    color: black;
+
+  }
+.btn {
+    margin-bottom: 10px;
+}
+
+
+
+footer {
+    padding: 50px 0 65px;
+  }
+  
+  footer .list-inline {
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer .copyright {
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+
+@media (min-width: 1200px) {
+    #content{
+        padding-left: 160px;
+    }
+  }
+
+
+  .badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+  }
+  
+  .label-warning[href],
+  .badge-warning[href] {
+    background-color: #c67605;
+  }
+  #lblCartCount {
+      font-size: 12px;
+      background:yellow;
+      color:black;
+      padding: 0 10px;
+      vertical-align: top;
+      margin-left: -10px; 
+  }
