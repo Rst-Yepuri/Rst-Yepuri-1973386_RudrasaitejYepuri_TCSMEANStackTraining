@@ -1,0 +1,30 @@
+a {
+    color: black;
+    transition: all 0.2s;
+  }
+  
+  a:focus, a:hover {
+    color: #0085A1;
+  }
+  
+
+  
+  .nav-link{
+      color:black
+  }
+  
+
+  footer {
+    padding: 50px 0 65px;
+  }
+  
+  footer .list-inline {
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer .copyright {
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: center;
+  }

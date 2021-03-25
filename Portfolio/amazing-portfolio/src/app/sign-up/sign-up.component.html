@@ -1,0 +1,59 @@
+<div class="container">
+    <form class="form" [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="FirstName">First Name </label>
+            <input type="text" class="form-control" formControlName="FirstName" required>
+            <div *ngIf="submitted && signUpForm.controls.FirstName.errors">
+                <div *ngIf="signUpForm.controls.FirstName.errors.required">
+                    First Name Required!
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="LastName">Last Name</label>
+            <input type="text" class="form-control" formControlName="LastName" required>
+            <div *ngIf="submitted && signUpForm.controls.LastName.errors">
+                <div *ngIf="signUpForm.controls.LastName.errors.required">
+                    Last Name Required!
+                </div>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="UserName">User Name</label>
+            <input type="text" class="form-control" formControlName="UserName" required>
+            <div *ngIf="submitted && signUpForm.controls.UserName.errors">
+                <div *ngIf="signUpForm.controls.UserName.errors.required">
+                    User Name Required!
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" formControlName="email" required>
+            <div *ngIf="submitted && signUpForm.controls.email.errors">
+                <div *ngIf="signUpForm.controls.email.errors.required">
+                    Email Required!
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="pass">Password</label>
+            <input type="password" class="form-control" formControlName="pass" required>
+            <div *ngIf="submitted && signUpForm.controls.pass.errors">
+                <div *ngIf="signUpForm.controls.pass.errors.required">
+                    Password Required!
+                </div>
+            </div>
+        </div>
+        <button class="btn btn btn-outline-primary" style="margin-top: 10px;">Submit</button>
+        <button type="reset" class="btn btn btn-outline-primary" style="margin-top: 10px;">Reset</button>
+
+
+
+
+    </form>
+
+</div>
