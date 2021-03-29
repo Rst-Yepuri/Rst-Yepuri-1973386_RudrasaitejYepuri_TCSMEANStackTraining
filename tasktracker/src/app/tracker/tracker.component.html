@@ -1,0 +1,31 @@
+
+<div>
+    <h2>Add Task details</h2>
+    <form #empRef="ngForm" (ngSubmit)="storeUser(empRef.value)">
+        <mat-form-field>
+            <mat-label>Id</mat-label>
+            <input matInput type="text" name="id" ngModel/>
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput type="text" name="name" ngModel/>
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <mat-label>Task</mat-label>
+            <input matInput type="text" name="task" ngModel/>
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <mat-label>Deadline Date</mat-label>
+            <input matInput type="date" name="date" ngModel/>
+        </mat-form-field>
+        <br/>
+        <button mat-stroked-button color="primary" 
+        style="background-color:lightblue;" type="submit">Store</button>
+        &nbsp;
+        <button mat-stroked-button color="primary" 
+        style="background-color:lightcoral;" type="reset">Reset</button>
+    </form>
+</div>

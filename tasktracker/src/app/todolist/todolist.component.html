@@ -1,0 +1,17 @@
+<div>
+    <h2>To-do-List</h2>
+    <table border="1" class="table table-bordered">
+        <tr>
+            <th >Id</th>
+            <th>Name</th>
+            <th >Task</th>
+            <th >Deadline</th>
+        </tr>
+        <tr *ngFor="let t of taskdetails">
+                <td >{{t.id}}</td>
+                <td >{{t.name}}</td>
+                <td >{{t.task}}</td>
+                <td >{{t.date}}</td>
+        </tr>
+    </table>
+</div>
