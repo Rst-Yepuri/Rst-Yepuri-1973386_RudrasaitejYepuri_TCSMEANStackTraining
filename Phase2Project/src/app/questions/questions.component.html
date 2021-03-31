@@ -1,0 +1,33 @@
+<div *ngIf = "result">
+    <div class="d-flex align-items-center justify-content-center" style="margin-top: 10%;">
+        <form #quiz = "ngForm" (ngSubmit) = "checkAnswers()">
+            <div class="question" *ngFor="let q of questions; index as i">
+                <div [hidden]="q.isHidden" id="i">
+                    <h3><strong>Q{{i+1}})</strong>: {{ q.questionText}}</h3>
+                <label>
+                    A: <input type="radio" name={{i}} value="a" (click)="recordAnswers(q.questionId,'a');"> {{q.option[0].optionText}}</label><br>
+                <label>
+                    B: <input type="radio" name={{i}} value="b" (click)="recordAnswers(q.questionId,'b');"> {{q.option[1].optionText}}</label><br>
+                <label>
+                    C: <input type="radio" name={{i}} value="c" (click)="recordAnswers(q.questionId,'c');"> {{q.option[2].optionText}}</label><br>
+                <label>
+                    D: <input type="radio" name={{i}} value="d" (click)="recordAnswers(q.questionId,'d');"> {{q.option[3].optionText}}</label><br>
+                <button  type="button" class="btn btn-success" (click)="questions[i].isHidden = true;questions[i + 1] ?questions[i + 1].isHidden = false : false; ">Next</button>
+                </div>
+            </div>
+            <input  class="btn btn-warning" type="submit" value="Submit Test" >
+        </form>
+    </div>
+</div>
+<div *ngIf = "!result">
+    <div class="container" style="margin-top: 15%;">
+        <div>
+            <h5>Achieved Score: {{score}}/10</h5>
+        </div>
+        <div>
+            <h1 [style.color]="getColor()">{{msg}}</h1>
+        </div>
+    </div>
+</div>
+
+

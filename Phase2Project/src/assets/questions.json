@@ -1,0 +1,258 @@
+{
+    "questions":[
+        {
+            "questionId":"1",
+            "questionText":"Which of the following option leads to the portability and security of Java?",
+            "option":[
+                {
+                    "optionValue":"a",
+                    "optionText":"Bytecode is executed by JVM"
+                },
+                {
+                    "optionValue":"b",
+                    "optionText":"The applet makes the Java code secure and portable"
+                },
+                {
+                    "optionValue":"c",
+                    "optionText":"Use of exception handling"
+                },
+                {
+                    "optionValue":"d",
+                    "optionText":"Dynamic binding between objects"
+                }
+            ],
+            "answer":"a",
+            "isHidden":false
+
+        },
+        {
+            "questionId":"2",
+            "questionText":"Which of the following is not a Java features?",
+            "option":[
+                {
+                    "optionValue":"a",
+                    "optionText":"Dynamic"
+                },
+                {
+                    "optionValue":"b",
+                    "optionText":"Architecture Neutral"
+                },
+                {
+                    "optionValue":"c",
+                    "optionText":"Use of pointers"
+                },
+                {
+                    "optionValue":"d",
+                    "optionText":"Object-oriented"
+                }
+            ],
+            "answer":"c",
+            "isHidden":true
+
+        },
+        {
+            "questionId":"3",
+            "questionText":"What is the return type of the hashCode() method in the Object class?",
+            "option":[
+                {
+                    "optionValue":"a",
+                    "optionText":"Object"
+                },
+                {
+                    "optionValue":"b",
+                    "optionText":"int"
+                },
+                {
+                    "optionValue":"c",
+                    "optionText":"log"
+                },
+                {
+                    "optionValue":"d",
+                    "optionText":"void"
+                }
+            ],
+            "answer":"b",
+            "isHidden":true
+
+        },
+        {
+            "questionId":"4",
+            "questionText":"What does the expression float a = 35 / 0 return?",
+            "option":[
+                {
+                    "optionValue":"a",
+                    "optionText":"0"
+                },
+                {
+                    "optionValue":"b",
+                    "optionText":"NaN"
+                },
+                {
+                    "optionValue":"c",
+                    "optionText":"Infinity"
+                },
+                {
+                    "optionValue":"d",
+                    "optionText":"Run time exception."
+                }
+            ],
+            "answer":"c",
+            "isHidden":true
+
+        },
+        {
+            "questionId":"5",
+            "questionText":"Which of the following tool is used to generate API documentation in HTML format from doc comments in source code?",
+            "option":[
+                {
+                    "optionValue":"a",
+                    "optionText":"javap tool"
+                },
+                {
+                    "optionValue":"b",
+                    "optionText":"javaw command"
+                },
+                {
+                    "optionValue":"c",
+                    "optionText":"Javadoc tool"
+                },
+                {
+                    "optionValue":"d",
+                    "optionText":"javah command"
+                }
+            ],
+            "answer":"c",
+            "isHidden":true
+
+        },
+        {
+            "questionId":"6",
+            "questionText":"Which package contains the Random class?",
+            "option":[
+                {
+                    "optionValue":"a",
+                    "optionText":"java.util package"
+                },
+                {
+                    "optionValue":"b",
+                    "optionText":"java.lang package"
+                },
+                {
+                    "optionValue":"c",
+                    "optionText":"java.io package"
+                },
+                {
+                    "optionValue":"d",
+                    "optionText":"java.awt package"
+                }
+            ],
+            "answer":"a",
+            "isHidden":true
+
+        },
+        {
+            "questionId":"7",
+            "questionText":"What do you mean by nameless objects?",
+            "option":[
+                {
+                    "optionValue":"a",
+                    "optionText":"An object created by using the new keyword."
+                },
+                {
+                    "optionValue":"b",
+                    "optionText":"An object of a superclass created in the subclass."
+                },
+                {
+                    "optionValue":"c",
+                    "optionText":"An object without having any name but having a reference."
+                },
+                {
+                    "optionValue":"d",
+                    "optionText":"An object that has no reference."
+                }
+            ],
+            "answer":"d",
+            "isHidden":true
+
+        },
+        {
+            "questionId":"8",
+            "questionText":"Which of the following is an immediate subclass of the Panel class?",
+            "option":[
+                {
+                    "optionValue":"a",
+                    "optionText":"Applet class"
+                },
+                {
+                    "optionValue":"b",
+                    "optionText":"Window class"
+                },
+                {
+                    "optionValue":"c",
+                    "optionText":"Frame class"
+                },
+                {
+                    "optionValue":"d",
+                    "optionText":"Dialog class"
+                }
+            ],
+            "answer":"a",
+            "isHidden":true
+
+        },
+        {
+            "questionId":"9",
+            "questionText":"Which of the following is a marker interface?",
+            "option":[
+                {
+                    "optionValue":"a",
+                    "optionText":"Runnable interface"
+                },
+                {
+                    "optionValue":"b",
+                    "optionText":"Remote interface"
+                },
+                {
+                    "optionValue":"c",
+                    "optionText":"Readable interface"
+                },
+                {
+                    "optionValue":"d",
+                    "optionText":"Result interface"
+                }
+            ],
+            "answer":"b",
+            "isHidden":true
+
+        },
+        {
+            "questionId":"10",
+            "questionText":"Which keyword is used for accessing the features of a package?",
+            "option":[
+                {
+                    "optionValue":"a",
+                    "optionText":"package"
+                },
+                {
+                    "optionValue":"b",
+                    "optionText":"import"
+                },
+                {
+                    "optionValue":"c",
+                    "optionText":"export"
+                },
+                {
+                    "optionValue":"d",
+                    "optionText":"extends"
+                }
+            ],
+            "answer":"b",
+            "isHidden":true
+
+        }
+        
+        
+    
+
+    ]
+}
